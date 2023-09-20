@@ -10,7 +10,7 @@ public interface TechLedBO {
 
     void updateTechLeadDetails(String techleadid,TechLeadDTO techLeadDTO);
 
-    void deleteTechLead(String techleadid);
+    TechLeadDTO deleteTechLead(String techleadid);
 
-    List<TechLeadDTO> getAllTechLeadDetails();
+    public TechLeadDTO getAllTechLeadDetails(String Techleadid) ;
 }

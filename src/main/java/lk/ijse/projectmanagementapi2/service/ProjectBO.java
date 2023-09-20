@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface ProjectBO {
 
-    ProjectDTO savePriject(ProjectDTO projectDTO);
+    ProjectDTO saveProject(ProjectDTO projectDTO);
 
     void updateProjectDetails(String projectid,ProjectDTO projectDTO);
 
-    void deleteProject(String projectid);
+    ProjectDTO deleteProject(String projectid);
 
-    List<ProjectDTO> getAllProjectsDetails();
+    ProjectDTO getAllProjectsDetails(String projectid);
 }

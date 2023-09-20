@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class TechLeadEntity {
+public class TechLeadEntity implements SuperEntity{
     @Id
     private String id;
     @Column(nullable = false)

@@ -11,7 +11,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "Project")
-public class ProjectEntity {
+public class ProjectEntity implements SuperEntity{
     @Id
     private Long id;
     @Column(nullable = false)
