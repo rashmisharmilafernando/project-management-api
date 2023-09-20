@@ -52,7 +52,7 @@ public class ProjectBOimpl implements ProjectBO {
 
     @Override
     public ProjectDTO getAllProjectsDetails(String projectid) {
-      if (!projectRepo.existsById(projectid)) throw new RuntimeException("TechLead not found.Please try again..!");
+      if (!projectRepo.existsById(projectid)) throw new RuntimeException("Project not found.Please try again..!");
             ProjectEntity entity=projectRepo.findProjectEntityBy(projectid);
             return converter.getProjectDTO(entity);
     }
