@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TechLeadDTO {
-    private String id;
+    private String tlid;
     private String name;
     private String address;
     private String phone;
