@@ -9,7 +9,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProjectDTO {
-    private Long proid;
+    private String proid;
     private String name;
     private String description;
     private Date startDate;
